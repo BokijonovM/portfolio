@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,200&family=Lato&family=M+PLUS+1:wght@400;500;600;700;800&family=Outfit:wght@300&family=Playfair+Display:wght@700&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500;800&family=Vujahday+Script&family=Zen+Kurenaido&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -50,16 +51,32 @@ section {
   filter: brightness(0.5);
 }
 
-.text h1 {
+.text h4 {
   font-family: "AlphaCentauri" !important;
-  font-size: 5vw;
+  font-size: 3vw;
   color: #fff;
-  letter-spacing: 20px;
   position: absolute;
   top: 35vh;
-  left: 34vw;
+  left: 24vw;
+  z-index: 99999 !important;
+  width: 500px;
 }
-
+@media (max-width: 700px) {
+  .text {
+    z-index: 99999 !important;
+  }
+  .text h4 {
+    left: 10vw;
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .text h4 {
+    left: 10vw;
+    font-size: 20px;
+    width: 200px;
+  }
+}
 .earth img {
   width: 400px;
   height: 400px;
