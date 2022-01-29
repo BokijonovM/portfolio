@@ -159,7 +159,7 @@ section {
   position: fixed !important;
   left: 30px;
   top: 15px;
-  z-index: 100;
+  z-index: 99;
 }
 .background-image {
   width: 100%;
