@@ -204,7 +204,16 @@ ul {
   right: -130px;
   transform: translate(-50%, -50%);
 }
-
+@media (max-width: 560px) {
+  ul {
+    flex-direction: column;
+    top: 170px;
+    right: -30px;
+  }
+  ul li {
+    margin-bottom: 15px !important;
+  }
+}
 ul li {
   list-style: none;
   margin: 0 15px;
@@ -232,7 +241,7 @@ ul li a::before {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #5ae4c6;
+  background: #03e9f4;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -240,25 +249,149 @@ ul li a::before {
 
 ul li a:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #5ae4c6;
+  box-shadow: 0 0 15px #03e9f4;
 }
 
 ul li a:hover {
-  color: #5ae4c6;
-  box-shadow: 0 0 5px #5ae4c6;
-  text-shadow: 0 0 5px #5ae4c6;
+  color: #03e9f4;
+  box-shadow: 0 0 5px #03e9f4;
+  text-shadow: 0 0 5px #03e9f4;
 }
 .get-in-touch {
   font-family: "Poppins", sans-serif !important;
 }
-.btn-say-hi {
-  padding: 15px 25px !important;
-  border-radius: 5px;
-  border: 1px solid grey !important ;
-  background-color: transparent;
-  color: white;
-  font-family: "Poppins", sans-serif;
+/* button say hello */
+.btn-say-hello-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
-.btn-say-hi:hover {
-  background-color: rgb(22, 22, 22);
+.btn-say-hello {
+  position: relative;
+  display: inline-block;
+  padding: 30px;
+  margin-left: 40px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.btn-say-hello:hover {
+  background: #03e9f4;
+  color: #333;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  text-decoration: none !important;
+}
+.btn-say-hello span {
+  position: absolute;
+  display: block;
+}
+
+.btn-say-hello span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.btn-say-hello span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.btn-say-hello span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.btn-say-hello span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+/* footer */
+
+.footer-main-div {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif !important;
+}
+.footer-main-div > footer > h5 {
+  margin-bottom: 0;
+  padding: 31px 0px;
+  text-align: center;
+  color: white !important;
+}
+.footer-main-div > footer > h5 > a {
+  text-decoration: none;
+  color: #03e9f4;
 }
