@@ -30,16 +30,24 @@ section {
   width: 40%;
   filter: brightness(0.5);
 }
+.text {
+  display: flex !important;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center !important;
+  align-content: center !important;
+  text-align: center;
+  align-items: center !important;
+}
 
-.text h4 {
+.text h1 {
   font-family: "AlphaCentauri" !important;
-  font-size: 3vw;
+
+  font-size: 8vw;
   color: #fff;
+  letter-spacing: 10px;
   position: absolute;
-  top: 35vh;
-  left: 24vw;
-  z-index: 99999 !important;
-  width: 500px;
+  text-align: center;
 }
 @media (max-width: 700px) {
   .text {
