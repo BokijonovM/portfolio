@@ -6,7 +6,7 @@ body {
   font-family: "Roboto";
   list-style: none;
   box-sizing: border-box;
-  background: #000;
+  background: #000 !important;
 }
 
 section {
@@ -247,4 +247,18 @@ ul li a:hover {
   color: #5ae4c6;
   box-shadow: 0 0 5px #5ae4c6;
   text-shadow: 0 0 5px #5ae4c6;
+}
+.get-in-touch {
+  font-family: "Poppins", sans-serif !important;
+}
+.btn-say-hi {
+  padding: 15px 25px !important;
+  border-radius: 5px;
+  border: 1px solid grey !important ;
+  background-color: transparent;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.btn-say-hi:hover {
+  background-color: rgb(22, 22, 22);
 }
