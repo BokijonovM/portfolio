@@ -1,5 +1,7 @@
 #svg-text {
   position: absolute !important;
+  margin: 100px !important;
+  width: 70%;
   animation: fill-svg 0.5s ease forwards 3s !important;
 }
 #svg-text path:nth-child(2) {
