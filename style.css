@@ -38,6 +38,8 @@ section {
   align-content: center !important;
   text-align: center;
   align-items: center !important;
+  margin-top: 30px;
+  z-index: 10;
 }
 
 .text h1 {
@@ -159,7 +161,7 @@ section {
   position: fixed !important;
   left: 30px;
   top: 15px;
-  z-index: 100;
+  z-index: 99;
 }
 .background-image {
   width: 100%;
@@ -402,4 +404,12 @@ ul li a:hover {
 .footer-main-div > footer > h5 > a {
   text-decoration: none;
   color: #03e9f4;
+}
+.section-say-hello {
+  clip-path: polygon(0 0, 100% 20%, 100% 83%, 0% 100%);
+  background-color: #111;
+}
+.section-before-say-hello {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 83%);
+  background-color: #111;
 }
