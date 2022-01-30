@@ -1,0 +1,51 @@
+.about-my-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 140px;
+  align-items: flex-start;
+  align-content: center;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.about-my-name-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.my-name-h1 {
+  font-size: 50px;
+}
+.my-name-is {
+  color: #03e9f4;
+}
+.about-me-personal-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 0;
+}
+.i-built-things {
+  font-size: 70px;
+}
+
+@media (max-width: 770px) {
+  .about-my-name {
+    margin: 0px 40px;
+  }
+  .my-name-h1 {
+    font-size: 30px;
+  }
+  .i-built-things {
+    font-size: 30px;
+  }
+}
+.section-before-say-hello {
+  display: flex;
+  align-items: center !important;
+  z-index: 100 !important;
+}
