@@ -38,17 +38,6 @@
   font-size: 70px;
 }
 
-@media (max-width: 770px) {
-  .about-my-name {
-    margin: 0px 40px;
-  }
-  .my-name-h1 {
-    font-size: 30px;
-  }
-  .i-built-things {
-    font-size: 30px;
-  }
-}
 .section-before-say-hello {
   display: flex;
   align-items: center !important;
@@ -66,4 +55,20 @@
   align-items: center;
   align-content: center;
   margin-left: 140px;
+}
+@media (max-width: 770px) {
+  .about-my-name {
+    margin: 0px 40px;
+  }
+  .my-name-h1 {
+    font-size: 30px;
+  }
+  .i-built-things {
+    font-size: 30px;
+  }
+  .about-me-main-div {
+    flex-direction: column;
+    margin-left: 40px;
+    justify-content: center;
+  }
 }
