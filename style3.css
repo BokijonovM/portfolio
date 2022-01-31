@@ -67,7 +67,7 @@
     font-size: 30px;
   }
   .about-me-main-div {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-left: 40px;
     justify-content: center;
   }
