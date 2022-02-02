@@ -3,5 +3,5 @@
 </div>
 
 <p align="center">
-  The first iteration of <a href="/" target="_blank">noNameYet.com</a> hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="#" target="_blank">noNameYet.com</a> hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
