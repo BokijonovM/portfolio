@@ -181,7 +181,8 @@ section {
   height: 80px;
   position: fixed;
   z-index: 10;
-  transition: 0.9s;
+  /* transition: 0.9s; */
+  transition: all 0.3s ease;
 }
 
 .nav-image {
